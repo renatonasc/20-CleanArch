@@ -2,6 +2,10 @@
 
 package model
 
+type ListOrders struct {
+	Orders []*Order `json:"orders"`
+}
+
 type Order struct {
 	ID         string  `json:"id"`
 	Price      float64 `json:"Price"`
